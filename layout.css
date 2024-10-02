@@ -1,0 +1,445 @@
+/** Header **/
+header {
+    background-color: var(--text-color);
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header img {
+    width: 35px;
+    height: 35px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.4rem;
+    gap: 4vw;
+    overflow-x: auto;
+    justify-content: center;
+
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/** Footer **/
+footer {
+    width: 100%;
+    background-color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    line-height: 1.3;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+.content {
+    padding: 25px;
+    padding-top: 0;
+    /* Content must be atleast the height of the view, but with room for the header (70px) and the footer (135px) */
+    min-height: calc(100vh - 70px - 135px);
+}
+
+/** Scroll to the top-button **/
+#scroll-to-top {
+   background-color: #3e3e3e;
+   padding: 5px 10px 5px 10px;
+    border-radius: 30px 0 30px 0;
+    border: 2px solid black;
+    color: white;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+/** Home page **/
+.home-hero-image {
+    background-image: url("billeder/home-image.webp");
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+}
+
+#allergod {
+    font-size: 5rem;
+    font-weight: 800;
+    text-shadow: 7px 7px 10px #3e3e3e;
+    color: var(--darkred)
+}
+
+.image-1 {
+    background-image: url("billeder/wheat.webp");
+}
+
+.image-2 {
+    background-image: url("billeder/laptop.webp")
+}
+
+.image-3 {
+    background-image: url("billeder/knowledge.webp")
+}
+
+/** Opskrifter **/
+.red-background {
+    background-color: var(--red);
+    margin: var(--theme-spacing);
+    padding: 10px;
+    max-width: 800px;
+
+    & h2 {
+        color: white;
+        margin: 0;
+    }
+}
+
+.slider {
+    max-width: 910px;
+}
+
+/** Mine opskrifter **/
+.dish1 {
+    background-image: url(billeder/korean-chicken.jpg);
+}
+
+.dish2 {
+    background-image: url(billeder/soup.jpg);
+}
+
+.dish3 {
+    background-image: url(billeder/gnochi.jpg);
+}
+
+.dish4 {
+    background-image: url(billeder/waffles.jpg);
+}
+
+.dish5 {
+    background-image: url(billeder/pasta-tomato.jpg);
+}
+
+.dish6 {
+    background-image: url(billeder/wok.jpg);
+}
+
+.dish7 {
+    background-image: url(billeder/pumpkin.jpg);
+}
+
+.dish8 {
+    background-image: url(billeder/meatballs.jpg);
+}
+
+/** Min ret **/
+.dish {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+ul {
+    margin: 0px 0px 0px 30px;
+    font-size: 1.3rem;
+}
+
+ol {
+    margin: 0px 0px 0px 30px;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+ol li {
+    margin-bottom: 25px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.dish-icons {
+    justify-content: end;
+    margin: 15px 0px 0 0;
+
+    & img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.size-icons {
+    justify-content: center;
+
+    & img {
+        width: 30px;
+        height: 30px;
+    }
+
+    & select {
+        height: 30px;
+    }
+}
+
+.web-flex-row h2 {
+    margin-top: var(--theme-spacing);
+}
+
+/** Erstatninger **/
+.erstatning-1 {
+    background-image: url(billeder/dairy.webp);
+    aspect-ratio: 4 / 1;
+}
+
+.img-fit {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    opacity: 65%;
+    font-weight: bold;
+    font-size: 5rem;
+    letter-spacing: 25px;
+    text-align: center;
+    }
+
+/**Cards**/
+.card {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card.reverse {
+    flex-direction: row-reverse;
+}
+
+.card .image {
+    width: 100%;
+    background-size: cover;
+    border-radius: 50px 0 50px 0;
+}
+
+.card p {
+    line-height: 1.3;
+    font-size: 1.2rem;
+}
+
+.card h2 {
+    line-height: 1.3;
+}
+
+.card > div {
+    flex: 1;
+}
+
+.tips-card {
+    border-radius: 50px 0 50px 0;
+    background-image: linear-gradient(var(--beige), var(--yellow), var(--orange));
+    padding: 10px;
+    margin: 50px 15% 50px 15%;
+
+    & h2 {
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/**Bottons**/
+a.button-yellow {
+    line-height: 50px;
+    padding: 0px 30px 0px 30px;
+    border-radius: 30px 0 30px 0;
+    background: var(--yellow);
+    color: black;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: var(--theme-spacing);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: var(--red);
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px 0 25px 0;
+    padding: 0px 15px 0px 15px;
+    font-size: 1.1rem;
+    margin: 0 3px 13px 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+a:hover, button:hover {
+    opacity: 75%;
+}
+
+button.selected {
+    background-color: var(--darkred);
+    border-color: var(--darkred);
+}
+
+a.button-dark-red {
+    line-height: 50px;
+    padding: 0px 30px 0px 30px;
+    border-radius: 30px 0 30px 0;
+    background: var(--darkred);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: var(--theme-spacing);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+a.button-orange {
+    line-height: 50px;
+    padding: 0px 30px 0px 30px;
+    border-radius: 30px 0 30px 0;
+    background: var(--orange);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: var(--theme-spacing);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/** flex helper classes **/
+.flex-row {
+    display: flex;
+    gap: 15px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/** Grids **/
+.grid-auto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    & div {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        background-size: cover;
+        background-position: center;
+        color: var(--beige);
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1;
+        padding: 10px;
+        text-shadow: 1px 1px 3px black;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+    }
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+.grid-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    align-self: center;
+}
+
+/* Slider til allergier under opskrifter */
+/* Allergi-inputs */
+.allergy-input-container {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    & p {
+        margin: 0;
+    }
+}
+
+.allergy-slider {
+    -webkit-apperarance: none;
+    width: 100%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .allergy-slider:hover {
+    opacity: 1;
+  }
+  
+  /** Styler "knoppen" */
+  .allergy-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #f00;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+  /** Styler "knoppen" på ikke-webkit browsere */
+  .allergy-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: red;
+    cursor: pointer;
+  }

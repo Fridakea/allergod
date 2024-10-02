@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Aller'God Opskrifter</title>
+
+    <link rel="stylesheet" href="generelt.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="website-layout.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex-row items-center">
+        <a href="index.html"><img src="billeder/a-logo.svg" alt="Logo for Aller'God"></a>
+    </header>
+
+    <div class="content flex-col items-center">
+        <h1>Opskrifter</h1>
+        <p>Er du løbet tør for ideer til hvad du kan spise? Skal du have gæster med allergier og ved ikke hvad du kan
+            servere? Uanset hvad din grund er, kan du her generere opskrifter ud fra lige netop dine behov.
+            <br /><br />Vælg dine madpræferencer ved at klikke af hvad du vil undvære i dine opskrifter nedenfor.
+            Derefter
+            kan du få
+            speciallavet opskrifter til netop dine behov.
+        </p>
+        <div class="red-background flex-col items-center">
+            <h2>Mine overfølsomheder:</h2>
+            <div id="allergies-selection-component"></div>
+        </div>
+        <h2>Vælg grad af overfølsomhed:</h2>
+        <img class="slider" src="billeder/slider.svg" alt="Slider som viser justering af allergi">
+        <div id="allergies-slider-area"></div>
+        <a class="button-dark-red" href="mine_opskrifter.html">Lav opskrifter!</a>
+    </div>
+
+    <footer class="flex-row items-center">
+        <div>
+            <h3>Aller'God</h3>
+            <p>Kontakt: <br />+45 2784 0455</p>
+        </div>
+        <a href="index.html"><img src="billeder/a-logo.svg" alt="Logo for Aller'God"></a>
+        <button onclick="topFunction()" id="scroll-to-top" title="Go to top">Til toppen</button>
+    </footer>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>

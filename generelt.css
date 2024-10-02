@@ -1,0 +1,44 @@
+/******* Reset *********/ 
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; 
+} 
+
+img { 
+    width: 100%; height: auto; display: block; 
+}
+
+/**Variable**/
+:root {
+    --beige: #FBF0D4;
+    --yellow: #FDD76C;
+    --orange: #DB893E;
+    --red: #B8483D;
+    --darkred: #560407;
+    --text-color: #3E3E3E;
+
+    --theme-spacing: 50px;
+}
+
+* {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.7;
+    color: #3E3E3E;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: calc(var(--theme-spacing) / 2);
+    margin-bottom: calc(var(--theme-spacing) / 3);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: calc(var(--theme-spacing) / 3);
+}
+
+p { 
+    font-size: 1.3rem;
+    margin-bottom: calc(var(--theme-spacing) / 2);
+}
